@@ -48,7 +48,7 @@ components:
   type: nvidia::gxf::BlockMemoryPool
   parameters:
     storage_type: 1
-    block_size: 6912000
+    block_size: 24883200
     num_blocks: 40
 - type: nvidia::gxf::VideoDecoderResponse
   parameters:
@@ -85,7 +85,7 @@ components:
   type: nvidia::gxf::BlockMemoryPool
   parameters:
     storage_type: 1
-    block_size: 6912000
+    block_size: 24883200
     num_blocks: 40
 - name: color_converter_operator
   type: nvidia::isaac::tensor_ops::StreamConvertColorFormat

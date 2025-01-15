@@ -38,7 +38,7 @@ components:
   type: nvidia::gxf::BlockMemoryPool
   parameters:
     storage_type: 1
-    block_size: 6278400
+    block_size: 22602240
     num_blocks: 40
 - name: color_converter_operator
   type: nvidia::isaac::tensor_ops::StreamConvertColorFormat
@@ -90,8 +90,8 @@ components:
     profile: 0
     qp: 20
     hw_preset_type: 0
-    input_width: 1920
-    input_height: 1080
+    input_width: 3840
+    input_height: 2160
     input_format: nv12
     config: pframe_cqp
     iframe_interval: 5
@@ -112,7 +112,7 @@ components:
   type: nvidia::gxf::BlockMemoryPool
   parameters:
     storage_type: 0
-    block_size: 6912000
+    block_size: 24883200
     num_blocks: 40
 - type: nvidia::gxf::VideoEncoderResponse
   parameters:
