@@ -35,10 +35,12 @@ def launch_setup(context, *args, **kwargs):
         datahub_name = config["datahub_name"]
         device_name = config["device_name"]
 
-    hdmi_input_compressed_topic = PathJoinSubstitution([datahub_name, device_name, "image_raw", "h264"])
-    hdmi_input_decompressed_topic = PathJoinSubstitution([datahub_name, device_name, "image_raw", "decompressed"])
+    # datahub_name comes from node namespace
+    hdmi_input_compressed_topic = PathJoinSubstitution([device_name, "image_raw", "h264"])
+    hdmi_input_decompressed_topic = PathJoinSubstitution([device_name, "image_raw", "decompressed"])
 
     rgb_decoder_node = ComposableNode(
+        package="isaac_ros_h264_decoder",
         name=f"decoder_{device_name}_rgb",
         namespace=datahub_name,
         plugin="nvidia::isaac_ros::h264_decoder::DecoderNode",
@@ -65,7 +67,7 @@ def generate_launch_description():
     return launch.LaunchDescription(
         [
             DeclareLaunchArgument(
-                "config_path",
+                "config_file",
                 default_value="/hdmi_input_config.yaml",
                 description="The path to the config file",
             ),

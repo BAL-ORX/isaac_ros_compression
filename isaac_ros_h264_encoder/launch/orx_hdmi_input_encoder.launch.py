@@ -37,8 +37,9 @@ def launch_setup(context, *args, **kwargs):
         input_width = config["input_width"]
         frame_rate = config["frame_rate"]
 
-    hdmi_input_raw_topic = PathJoinSubstitution([datahub_name, device_name, "image_raw"])
-    hdmi_input_compressed_topic = PathJoinSubstitution([datahub_name, device_name, "image_raw", "h264"])
+    # datahub_name comes from node namespace
+    hdmi_input_raw_topic = PathJoinSubstitution([device_name, "image_raw"])
+    hdmi_input_compressed_topic = PathJoinSubstitution([device_name, "image_raw", "h264"])
 
     encoder_node_rgb = ComposableNode(
         name=f"encoder_{device_name}_rgb",
@@ -79,7 +80,7 @@ def generate_launch_description():
         [
             DeclareLaunchArgument("encoder_config", default_value="custom", description="Config of encoder"),
             DeclareLaunchArgument(
-                "config_path",
+                "config_file",
                 default_value="/hdmi_input_config.yaml",
                 description="The path to the config file",
             ),
