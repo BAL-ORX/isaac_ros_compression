@@ -56,8 +56,8 @@ def launch_setup(context, *args, **kwargs):
         raise ValueError(f"Invalid resolution_ID {resolution_ID}")
 
     if pub_resolution != "NATIVE":
-        input_height = input_height // pub_downscale_factor
-        input_width = input_width // pub_downscale_factor
+        input_height = int(input_height // pub_downscale_factor)
+        input_width = int(input_width // pub_downscale_factor)
 
     # datahub_name comes from node namespace
     zed_left_raw_topic = PathJoinSubstitution([camera_name, "left", "image_rect_color"])
