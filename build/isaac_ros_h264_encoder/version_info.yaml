@@ -1,0 +1,7 @@
+build_datetime: '2026-06-07T19:27:33.515165'
+git_branch: new_isaac_ros
+git_commit_date: 2026-04-30 19:52:20 -0700
+git_commit_hash: 3a3897f55283e3c92524c0b02cf803df8ae43b28
+git_commit_message: Isaac ROS 4.4
+git_workspace_dirty: 'Yes'
+version: 4.4.0

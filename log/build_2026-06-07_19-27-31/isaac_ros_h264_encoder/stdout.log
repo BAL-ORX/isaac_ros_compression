@@ -1,0 +1,107 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Architecture: x86_64
+-- Found ament_cmake_auto: 2.5.6 (/opt/ros/jazzy/share/ament_cmake_auto/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Loading isaac_ros_common extras
+-- CMAKE_BUILD_TYPE: Release
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found CUDA: /usr/local/cuda (found version "13.0") 
+-- CUDA architectures: 120;100;89;86;80;75
+-- Loading isaac_ros_common extras (modules)
+-- Loading isaac_ros_gxf extras
+-- Found CUDAToolkit: /usr/local/cuda/targets/x86_64-linux/include (found version "13.0.88") 
+-- Architecture: x86_64
+-- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+-- Found launch_testing_ament_cmake: 3.4.10 (/opt/ros/jazzy/share/launch_testing_ament_cmake/cmake)
+-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+-- Found PythonExtra: /usr/bin/python3  
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /workspaces/isaac_ros-dev/src/isaac_ros_h264_encoder/include
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Configured 'flake8' exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (1.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: /workspaces/isaac_ros-dev/build/isaac_ros_h264_encoder
+[ 40%] [32mBuilding CXX object gxf/codec/CMakeFiles/gxf_video_encoder_extension.dir/video_encoder/videoencoder_context.cpp.o[0m
+[ 40%] [32mBuilding CXX object gxf/codec/CMakeFiles/gxf_video_encoder_extension.dir/video_encoder/videoencoder_response.cpp.o[0m
+[ 40%] [32mBuilding CXX object gxf/codec/CMakeFiles/gxf_video_encoder_extension.dir/video_encoder/videoencoder_ext.cpp.o[0m
+[ 40%] [32mBuilding CXX object gxf/codec/CMakeFiles/gxf_video_encoder_extension.dir/video_encoder/videoencoder_request.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/encoder_node.dir/src/encoder_node.cpp.o[0m
+[ 40%] [34m[1mGenerating version information as YAML[0m
+[ 46%] [32mBuilding CXX object gxf/codec/CMakeFiles/gxf_video_encoder_extension.dir/video_encoder/videoencoder_utils.cpp.o[0m
+[ 46%] Built target generate_version_info_target_isaac_ros_h264_encoder
+[ 53%] [32m[1mLinking CXX shared library libgxf_video_encoder_extension.so[0m
+[ 53%] Built target gxf_video_encoder_extension
+[ 60%] [32mBuilding CXX object gxf/codec/CMakeFiles/gxf_video_decoder_extension.dir/video_decoder/videodecoder_utils.cpp.o[0m
+[ 80%] [32mBuilding CXX object gxf/codec/CMakeFiles/gxf_video_decoder_extension.dir/video_decoder/videodecoder_request.cpp.o[0m
+[ 80%] [32mBuilding CXX object gxf/codec/CMakeFiles/gxf_video_decoder_extension.dir/video_decoder/videodecoder_ext.cpp.o[0m
+[ 80%] [32mBuilding CXX object gxf/codec/CMakeFiles/gxf_video_decoder_extension.dir/video_decoder/videodecoder_response.cpp.o[0m
+[ 86%] [32mBuilding CXX object gxf/codec/CMakeFiles/gxf_video_decoder_extension.dir/video_decoder/videodecoder_context.cpp.o[0m
+[ 93%] [32m[1mLinking CXX shared library libgxf_video_decoder_extension.so[0m
+[ 93%] Built target gxf_video_decoder_extension
+[100%] [32m[1mLinking CXX shared library libencoder_node.so[0m
+[100%] Built target encoder_node
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Symlinking: /workspaces/isaac_ros-dev/install/isaac_ros_h264_encoder/share/isaac_ros_h264_encoder/gxf/lib/codec/libgxf_video_encoder_extension.so
+-- Symlinking: /workspaces/isaac_ros-dev/install/isaac_ros_h264_encoder/share/isaac_ros_h264_encoder/version_info.yaml
+-- Symlinking: /workspaces/isaac_ros-dev/install/isaac_ros_h264_encoder/include/isaac_ros_h264_encoder/encoder_node.hpp
+-- Symlinking: /workspaces/isaac_ros-dev/install/isaac_ros_h264_encoder/share/isaac_ros_h264_encoder/environment/library_path.sh
+-- Symlinking: /workspaces/isaac_ros-dev/install/isaac_ros_h264_encoder/share/isaac_ros_h264_encoder/environment/library_path.dsv
+-- Symlinking: /workspaces/isaac_ros-dev/install/isaac_ros_h264_encoder/lib/libencoder_node.so
+-- Symlinking: /workspaces/isaac_ros-dev/install/isaac_ros_h264_encoder/share/isaac_ros_h264_encoder/config/namespace_injector_rule.yaml
+-- Symlinking: /workspaces/isaac_ros-dev/install/isaac_ros_h264_encoder/share/isaac_ros_h264_encoder/config/nitros_encoder_node.yaml
+-- Symlinking: /workspaces/isaac_ros-dev/install/isaac_ros_h264_encoder/share/isaac_ros_h264_encoder/config/realsense.yaml
+-- Symlinking: /workspaces/isaac_ros-dev/install/isaac_ros_h264_encoder/share/isaac_ros_h264_encoder/launch/isaac_ros_encode_r2b_rosbag.launch.py
+-- Symlinking: /workspaces/isaac_ros-dev/install/isaac_ros_h264_encoder/share/isaac_ros_h264_encoder/launch/isaac_ros_h264_encoder_core.launch.py
+-- Symlinking: /workspaces/isaac_ros-dev/install/isaac_ros_h264_encoder/share/ament_index/resource_index/package_run_dependencies/isaac_ros_h264_encoder
+-- Symlinking: /workspaces/isaac_ros-dev/install/isaac_ros_h264_encoder/share/ament_index/resource_index/parent_prefix_path/isaac_ros_h264_encoder
+-- Symlinking: /workspaces/isaac_ros-dev/install/isaac_ros_h264_encoder/share/isaac_ros_h264_encoder/environment/ament_prefix_path.sh
+-- Symlinking: /workspaces/isaac_ros-dev/install/isaac_ros_h264_encoder/share/isaac_ros_h264_encoder/environment/ament_prefix_path.dsv
+-- Symlinking: /workspaces/isaac_ros-dev/install/isaac_ros_h264_encoder/share/isaac_ros_h264_encoder/environment/path.sh
+-- Symlinking: /workspaces/isaac_ros-dev/install/isaac_ros_h264_encoder/share/isaac_ros_h264_encoder/environment/path.dsv
+-- Symlinking: /workspaces/isaac_ros-dev/install/isaac_ros_h264_encoder/share/isaac_ros_h264_encoder/local_setup.bash
+-- Symlinking: /workspaces/isaac_ros-dev/install/isaac_ros_h264_encoder/share/isaac_ros_h264_encoder/local_setup.sh
+-- Symlinking: /workspaces/isaac_ros-dev/install/isaac_ros_h264_encoder/share/isaac_ros_h264_encoder/local_setup.zsh
+-- Symlinking: /workspaces/isaac_ros-dev/install/isaac_ros_h264_encoder/share/isaac_ros_h264_encoder/local_setup.dsv
+-- Symlinking: /workspaces/isaac_ros-dev/install/isaac_ros_h264_encoder/share/isaac_ros_h264_encoder/package.dsv
+-- Symlinking: /workspaces/isaac_ros-dev/install/isaac_ros_h264_encoder/share/ament_index/resource_index/packages/isaac_ros_h264_encoder
+-- Symlinking: /workspaces/isaac_ros-dev/install/isaac_ros_h264_encoder/share/ament_index/resource_index/rclcpp_components/isaac_ros_h264_encoder
+-- Symlinking: /workspaces/isaac_ros-dev/install/isaac_ros_h264_encoder/share/isaac_ros_h264_encoder/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Symlinking: /workspaces/isaac_ros-dev/install/isaac_ros_h264_encoder/share/isaac_ros_h264_encoder/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Symlinking: /workspaces/isaac_ros-dev/install/isaac_ros_h264_encoder/share/isaac_ros_h264_encoder/cmake/ament_cmake_export_libraries-extras.cmake
+-- Symlinking: /workspaces/isaac_ros-dev/install/isaac_ros_h264_encoder/share/isaac_ros_h264_encoder/cmake/isaac_ros_h264_encoderConfig.cmake
+-- Symlinking: /workspaces/isaac_ros-dev/install/isaac_ros_h264_encoder/share/isaac_ros_h264_encoder/cmake/isaac_ros_h264_encoderConfig-version.cmake
+-- Symlinking: /workspaces/isaac_ros-dev/install/isaac_ros_h264_encoder/share/isaac_ros_h264_encoder/package.xml

@@ -1,0 +1,139 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-fbc64c60e57414cb0d59.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						4,
+						5
+					]
+				},
+				{
+					"build" : "gxf/codec",
+					"jsonFile" : "directory-gxf.codec-Release-c2f240d77af207785504.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "gxf/codec",
+					"targetIndexes" : 
+					[
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "isaac_ros_h264_encoder",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						4,
+						5
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "gxf_codec_extension",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "encoder_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-encoder_node-Release-a6756e787c5b3888e951.json",
+					"name" : "encoder_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "generate_version_info_target_isaac_ros_h264_encoder::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-generate_version_info_target_isaac_ros_h264_encoder-Release-7da5ced80b8e2e2f38f6.json",
+					"name" : "generate_version_info_target_isaac_ros_h264_encoder",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "gxf_video_decoder_extension::@76d69e6012e4c91823c5",
+					"jsonFile" : "target-gxf_video_decoder_extension-Release-bfe7a1b2b01473f1799f.json",
+					"name" : "gxf_video_decoder_extension",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "gxf_video_encoder_extension::@76d69e6012e4c91823c5",
+					"jsonFile" : "target-gxf_video_encoder_extension-Release-73856f2050ff0e3e8c5a.json",
+					"name" : "gxf_video_encoder_extension",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "isaac_ros_h264_encoder_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-isaac_ros_h264_encoder_uninstall-Release-e45e332d5ea274596dee.json",
+					"name" : "isaac_ros_h264_encoder_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Release-087ac1e12475e8d6d78a.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/workspaces/isaac_ros-dev/build/isaac_ros_h264_encoder",
+		"source" : "/workspaces/isaac_ros-dev/src/isaac_ros_h264_encoder"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/workspaces/isaac_ros-dev/build/isaac_ros_h264_encoder/gxf/codec/libgxf_video_encoder_extension.so" "TARGETS" "gxf_video_encoder_extension" "DESTINATION" "share/isaac_ros_h264_encoder/gxf/lib/codec")
