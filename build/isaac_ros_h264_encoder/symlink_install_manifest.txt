@@ -8,8 +8,10 @@
 /workspaces/isaac_ros-dev/install/isaac_ros_h264_encoder/share/isaac_ros_h264_encoder/config/nitros_encoder_node.yaml
 /workspaces/isaac_ros-dev/install/isaac_ros_h264_encoder/share/isaac_ros_h264_encoder/config/realsense.yaml
 /workspaces/isaac_ros-dev/install/isaac_ros_h264_encoder/share/isaac_ros_h264_encoder/config/zed.yaml
+/workspaces/isaac_ros-dev/install/isaac_ros_h264_encoder/share/isaac_ros_h264_encoder/config/zed_mono.yaml
 /workspaces/isaac_ros-dev/install/isaac_ros_h264_encoder/share/isaac_ros_h264_encoder/launch/isaac_ros_encode_r2b_rosbag.launch.py
 /workspaces/isaac_ros-dev/install/isaac_ros_h264_encoder/share/isaac_ros_h264_encoder/launch/isaac_ros_h264_encoder_core.launch.py
+/workspaces/isaac_ros-dev/install/isaac_ros_h264_encoder/share/isaac_ros_h264_encoder/launch/isaac_ros_h264_encoder_mono.launch.py
 /workspaces/isaac_ros-dev/install/isaac_ros_h264_encoder/share/isaac_ros_h264_encoder/launch/isaac_ros_h264_encoder_stereo.launch.py
 /workspaces/isaac_ros-dev/install/isaac_ros_h264_encoder/share/ament_index/resource_index/package_run_dependencies/isaac_ros_h264_encoder
 /workspaces/isaac_ros-dev/install/isaac_ros_h264_encoder/share/ament_index/resource_index/parent_prefix_path/isaac_ros_h264_encoder
