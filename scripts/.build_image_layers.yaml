@@ -1,0 +1,12 @@
+image_key_order:
+  - isaac_ros.dependency
+
+context_overrides:
+  isaac_ros: ..
+  noble: ..
+  dependency: ../..
+
+cache_to_registry_names: []
+cache_from_registry_names:
+  - nvcr.io/nvidia/isaac/ros
+remote_builder: {}

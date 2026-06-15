@@ -1,6 +1,6 @@
 docker:
   run:
     container_name: isaac_ros_compression_dev_container
-  # image:
-  #   additional_image_keys:
-  #     - zed
+  image:
+    additional_image_keys:
+      - dependency

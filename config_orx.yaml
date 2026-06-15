@@ -1,0 +1,27 @@
+# config_orx.yaml — configuration for orx_isaac_ros_h264_encoder.launch.py
+#
+# Pass a different path with:
+#   ros2 launch isaac_ros_h264_encoder orx_isaac_ros_h264_encoder.launch.py \
+#       config_path:=/path/to/file.yaml
+
+# ── H264 Encoder ──────────────────────────────────────────────────────────────
+encoder:
+  # Input resolution — must match what the camera driver publishes
+  input_width: 1280
+  input_height: 720
+
+  # Encoder profile:
+  #   iframe_cqp — keyframe-only, good for recording/streaming
+  #   pframe_cqp — predictive frames, lower bitrate, more decoding complexity
+  config: iframe_cqp
+
+  # QoS of the incoming image topic from the camera driver.
+  # SENSOR_DATA = best_effort/volatile (ZED, RealSense default)
+  # SYSTEM_DEFAULT = reliable/volatile
+  image_qos: SENSOR_DATA
+
+  # Input topic from the camera driver
+  image_topic: /zed/zed_node/left/image_rect_color
+
+  # Output topic for the compressed H264 stream
+  compressed_topic: /zed/zed_node/left/image_h264
