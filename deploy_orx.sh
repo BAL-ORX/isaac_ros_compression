@@ -59,6 +59,8 @@ if ! docker ps --quiet --filter "name=^/${CONTAINER}$" | grep -q .; then
     # and set it exclusively here).
     _DETACH_ARGS=$(mktemp)
     echo "--detach" > "${_DETACH_ARGS}"
+    grep -v '^\s*#' "${WORKSPACE}/scripts/.isaac_ros_dev-dockerargs" | \
+        grep -v '^\s*$' >> "${_DETACH_ARGS}"
     if [[ -n "${CYCLONEDDS_PROFILE:-}" ]]; then
         [[ -f "${CYCLONEDDS_PROFILE}" ]] || \
             { echo "[deploy] ERROR: CYCLONEDDS_PROFILE not found: ${CYCLONEDDS_PROFILE}"; exit 1; }

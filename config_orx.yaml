@@ -21,7 +21,7 @@ encoder:
   image_qos: SENSOR_DATA
 
   # Input topic from the camera driver
-  image_topic: /zed/zed_node/left/image_rect_color
+  image_topic: /zed/zed_node/rgb/color/rect/image
 
   # Output topic for the compressed H264 stream
-  compressed_topic: /zed/zed_node/left/image_h264
+  compressed_topic: /zed/zed_node/rgb/color/rect/image_h264
